@@ -1,9 +1,9 @@
 # coding: utf-8
-from fields.ages import AgeColumnProcessor
-from fields.base_fields import AbstractDataProcessor, DictColumnProcessor, BaseColumnProcessor
-from fields.birth_years import BirthYearColumnProcessor
-from fields.boolean_fields import BoolColumnProcessor
-from fields.dates import DateColumnProcessor
+from .fields.ages import AgeColumnProcessor
+from .fields.base_fields import AbstractDataProcessor, DictColumnProcessor, BaseColumnProcessor
+from .fields.birth_years import BirthYearColumnProcessor
+from .fields.boolean_fields import BoolColumnProcessor
+from .fields.dates import DateColumnProcessor
 
 
 class MemoDataProcessor(AbstractDataProcessor):
