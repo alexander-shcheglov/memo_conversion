@@ -1,19 +1,17 @@
 # coding: utf-8
 from typing import Union
 
-from fields.base_fields import ColumnProcessor
+from memo_conversion.fields.base_fields import ColumnProcessor
 
 
-class DateColumnProcessor(ColumnProcessor):
+class BirthYearColumnProcessor(ColumnProcessor):
     astype = 'Int64'
 
     def modification_function(self, value: str) -> Union[int, None]:
         if value:
-            dd, mm, yyyy = value.split('.')
             try:
-                return int(yyyy)
+                result = int(value)
+                return result
             except ValueError:
                 pass
         return None
-
-

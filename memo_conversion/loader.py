@@ -6,7 +6,7 @@ import py7zr
 from io import BytesIO
 from urllib import request
 from environs import Env
-from data_processor import MemoDataProcessor
+from memo_conversion.data_processor import MemoDataProcessor
 
 MEMO_PATH = "https://github.com/MemorialInternational/memorial_data_FULL_DB/" \
             "raw/master/data/lists.memo.ru-disk/memorial_lists.tsv.7z"

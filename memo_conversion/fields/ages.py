@@ -1,7 +1,7 @@
 from typing import Union
 import re
 
-from fields.base_fields import ColumnProcessor
+from memo_conversion.fields.base_fields import ColumnProcessor
 
 remove_spaces = re.compile(r"\s+")
 digits = re.compile(r"(\d+)(?:лет|л|г|г\.|года|год|,|\b)+", re.U | re.I)

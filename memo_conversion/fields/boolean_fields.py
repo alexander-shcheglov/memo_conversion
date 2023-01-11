@@ -1,5 +1,5 @@
 # coding: utf-8
-from fields.base_fields import ColumnProcessor
+from memo_conversion.fields.base_fields import ColumnProcessor
 
 
 class BoolColumnProcessor(ColumnProcessor):
